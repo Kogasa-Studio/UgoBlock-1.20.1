@@ -5,19 +5,32 @@
 		"0": "ugoblock:block/basket_maker_front",
 		"1": "ugoblock:block/basket_maker_side",
 		"2": "ugoblock:block/smooth_crying_obsidian",
+		"3": "ugoblock:block/smooth_crying_obsidian_outline",
 		"particle": "ugoblock:block/basket_maker_front"
 	},
 	"elements": [
 		{
-			"from": [0, 0, 0],
-			"to": [16, 16, 8],
+			"from": [0.25, 0.25, 0.25],
+			"to": [15.75, 15.75, 7.75],
 			"faces": {
 				"north": {"uv": [0, 0, 16, 16], "texture": "#0"},
 				"east": {"uv": [0, 0, 16, 8], "rotation": 90, "texture": "#1"},
 				"south": {"uv": [0, 0, 16, 16], "texture": "#2"},
-				"west": {"uv": [0, 0, 16, 8], "rotation": 270, "texture": "#1"},
+				"west": {"uv": [16, 0, 0, 8], "rotation": 270, "texture": "#1"},
 				"up": {"uv": [0, 0, 16, 8], "texture": "#1"},
 				"down": {"uv": [0, 0, 16, 8], "rotation": 180, "texture": "#1"}
+			}
+		},
+		{
+			"from": [16, 0, 0],
+			"to": [0, 16, 8],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#3"},
+				"east": {"uv": [0, 0, 8.5, 16], "texture": "#3"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#3"},
+				"west": {"uv": [0, 0, 8.5, 16], "texture": "#3"},
+				"up": {"uv": [0, 0, 16, 8.5], "texture": "#3"},
+				"down": {"uv": [0, 0, 16, 8.5], "texture": "#3"}
 			}
 		}
 	]

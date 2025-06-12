@@ -47,7 +47,7 @@ public class WirelessRedstoneReceiverBlock extends BaseEntityBlock {
     public static final IntegerProperty COLOR2 = IntegerProperty.create("color2",0,15);
     public static final IntegerProperty COLOR3 = IntegerProperty.create("color3",0,15);
     public WirelessRedstoneReceiverBlock(Properties p_49795_) {
-        super(p_49795_);
+        super(p_49795_.lightLevel(state -> state.getValue(POWERED) ? 15 : 0));
         this.registerDefaultState(this.stateDefinition.any().setValue(POWERED, false).setValue(COLOR1,0).setValue(COLOR2,0).setValue(COLOR3,0));
     }
     @Override
